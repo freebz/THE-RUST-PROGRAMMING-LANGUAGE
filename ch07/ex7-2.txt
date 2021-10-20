@@ -1,0 +1,11 @@
+예제 7-2 예제 7-1의 코드로 구성된 모듈 트리
+
+crate
++-- front_of_house
+      +-- hostring
+      |     +-- add_to_waitlist
+      |     +-- add_at_table
+      +-- serving
+            +-- take_order
+	    +-- serve_order
+	    +-- take_payment
