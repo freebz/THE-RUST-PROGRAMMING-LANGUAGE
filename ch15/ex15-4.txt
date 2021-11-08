@@ -1,0 +1,11 @@
+예제 15-4 재귀 열거자를 선언할 때 발생하는 에러
+
+error[E0072]: recursive type `List` has infinite size
+ --> src/main.rs:3:1
+  |
+1 | enum List {
+  | ^^^^^^^^^ recursive type has infinite size
+2 |     Cons(i32, List),
+  |               ---- recursive without indirection
+  |
+help: insert some indirection (e.g., a `Box`, `Rc`, or `&`) to make `List` representable
